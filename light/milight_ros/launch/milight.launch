@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+  <master auto="start"/>
+
+  <!-- Control all milight light from one controller -->
+  <node pkg="milight_ros" type="milight" respawn="true" name="milight_0">
+    <remap from="/on" to="/HOME/milight/all/on" />
+    <remap from="/off" to="/HOME/milight/all/off" />
+
+    <param name="address" value="192.168.0.11" />
+    <param name="port" value="8899" />
+    <param name="milight_number" value="0" />
+  </node>
+
+</launch>
