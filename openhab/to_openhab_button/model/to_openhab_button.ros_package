@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="to_openhab_button" author="Joffrey Kriegel" author_email="kriegel.joffrey@gmail.com" description="The to_openhab_button package" license="GPLv3">
+  <node name="to_openhab_button" frequency="50.0">
+    <publisher name="output" msg="diagnostic_msgs::KeyValue"/>
+    <subscriber name="emptyON" msg="std_msgs::Empty"/>
+    <subscriber name="emptyOFF" msg="std_msgs::Empty"/>
+    <subscriber name="bool" msg="std_msgs::Bool"/>
+    <parameter name="key" type="string"/>
+    <parameter name="value_on" type="string" value=""/>
+    <parameter name="value_off" type="string"/>
+  </node>
+  <depend>std_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+</ros:Package>

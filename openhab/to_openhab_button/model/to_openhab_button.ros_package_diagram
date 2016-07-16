@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:ros="http://ros/1.0" xmi:id="_dhdR0Et3EeaV2-72OxaQng" type="RosPackage" name="to_openhab_button.ros_package_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_eQ6Y0Et3EeaV2-72OxaQng" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_eQ6_4Et3EeaV2-72OxaQng" type="5008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_eQ6_4Ut3EeaV2-72OxaQng" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_sKR8YEt3EeaV2-72OxaQng" type="3001">
+        <element xmi:type="ros:Parameter" href="to_openhab_button.ros_package#//@node.0/@parameter.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_sKR8YUt3EeaV2-72OxaQng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_tVpjUEt3EeaV2-72OxaQng" type="3001">
+        <element xmi:type="ros:Parameter" href="to_openhab_button.ros_package#//@node.0/@parameter.1"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tVpjUUt3EeaV2-72OxaQng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_uJEkUEt3EeaV2-72OxaQng" type="3001">
+        <element xmi:type="ros:Parameter" href="to_openhab_button.ros_package#//@node.0/@parameter.2"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uJEkUUt3EeaV2-72OxaQng"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_eQ6_4kt3EeaV2-72OxaQng" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_eQ7m8Et3EeaV2-72OxaQng"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_eQ7m8Ut3EeaV2-72OxaQng"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_pftzkEt3EeaV2-72OxaQng" type="3004">
+      <children xmi:type="notation:DecorationNode" xmi:id="_pfuaoEt3EeaV2-72OxaQng" type="5004"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_pftzkUt3EeaV2-72OxaQng"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_pftzkkt3EeaV2-72OxaQng" fontName="Ubuntu"/>
+      <element xmi:type="ros:Publisher" href="to_openhab_button.ros_package#//@node.0/@publisher.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pftzk0t3EeaV2-72OxaQng"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_b86gcEt4EeaV2-72OxaQng" type="3007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_b87HgEt4EeaV2-72OxaQng" type="5007"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_b86gcUt4EeaV2-72OxaQng"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_b86gckt4EeaV2-72OxaQng" fontName="Ubuntu"/>
+      <element xmi:type="ros:Subscriber" href="to_openhab_button.ros_package#//@node.0/@subscriber.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b86gc0t4EeaV2-72OxaQng" x="-79" y="36"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_gTXjUEt4EeaV2-72OxaQng" type="3007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_gTYKYEt4EeaV2-72OxaQng" type="5007"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_gTXjUUt4EeaV2-72OxaQng"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_gTXjUkt4EeaV2-72OxaQng" fontName="Ubuntu"/>
+      <element xmi:type="ros:Subscriber" href="to_openhab_button.ros_package#//@node.0/@subscriber.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gTXjU0t4EeaV2-72OxaQng" x="-79" y="60"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_hkt2cEt4EeaV2-72OxaQng" type="3007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hkudgEt4EeaV2-72OxaQng" type="5007"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_hkt2cUt4EeaV2-72OxaQng"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_hkt2ckt4EeaV2-72OxaQng" fontName="Ubuntu"/>
+      <element xmi:type="ros:Subscriber" href="to_openhab_button.ros_package#//@node.0/@subscriber.2"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hkt2c0t4EeaV2-72OxaQng" x="-79" y="120"/>
+    </children>
+    <element xmi:type="ros:Node" href="to_openhab_button.ros_package#//@node.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eQ6Y0Ut3EeaV2-72OxaQng" x="336" y="132" width="409" height="181"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_dhdR0Ut3EeaV2-72OxaQng"/>
+  <element xmi:type="ros:Package" href="to_openhab_button.ros_package#/"/>
+</notation:Diagram>
