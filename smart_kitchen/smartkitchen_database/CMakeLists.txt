@@ -128,18 +128,13 @@ include_directories(
 # add_dependencies(smartkitchen_database ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
-add_executable(buy_list src/buy_list.cpp)
 add_executable(item_list src/item_list.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(buy_list ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(item_list ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(buy_list
-  ${catkin_LIBRARIES}
-)
 target_link_libraries(item_list
   ${catkin_LIBRARIES}
 )

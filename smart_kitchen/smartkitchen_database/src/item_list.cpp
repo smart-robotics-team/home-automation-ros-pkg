@@ -340,6 +340,9 @@ void ItemListROS::fillOpenHabFiles(void)
                 sitemap_file << "Switch item="
                         << it->item_name         
                         << " mappings=[DECREASE='REMOVE ONE'] valuecolor=[>4=\"green\",>1=\"orange\",<=1=\"red\"]\n";
+		sitemap_file << "Switch item="
+                        << it->item_name
+                        << " mappings=[INCREASE='ADD   ONE'] valuecolor=[>4=\"green\",>1=\"orange\",<=1=\"red\"]\n"; // TEST
 
                 items_file << "Dimmer "
                         << it->item_name 
@@ -370,8 +373,12 @@ void ItemListROS::fillOpenHabFiles(void)
                         << "        " << it->item_name << "_value = "
                         << it->item_name << "_value - 1\n"
                         << "        if(" << it->item_name << "_value<0)   " << it->item_name << "_value = 0\n"
-                        << "        postUpdate(" << it->item_name << ", " << it->item_name << "_value)\n"
-                        << "    }\nend\n";
+                        << "        postUpdate(" << it->item_name << ", " << it->item_name << "_value)\n    }\n"
+			<< "    if (receivedCommand==INCREASE) {\n"
+                        << "        " << it->item_name << "_value = "
+                        << it->item_name << "_value + 1\n"
+                        << "        postUpdate(" << it->item_name << ", " << it->item_name << "_value)\n    }\n"
+                        << "end\n";
         }
 
 	items_file.close();
