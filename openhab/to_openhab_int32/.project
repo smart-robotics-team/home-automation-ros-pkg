@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>float_from_openhab@bride</name>
+	<name>to_openhab_int32@bride</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -47,7 +47,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/float_from_openhab/bride</value>
+					<value>/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_int32/bride</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
@@ -83,7 +83,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.location</key>
-					<value>/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/float_from_openhab/bride</value>
+					<value>/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_int32/bride</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
@@ -120,41 +120,6 @@
 		</link>
 		<link>
 			<name>[Targets]</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab/</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab/Source Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab/Source Files/float_from_openhab_ros.cpp</name>
-			<type>1</type>
-			<location>/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/float_from_openhab/ros/src/float_from_openhab_ros.cpp</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] float_from_openhab/Resources</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>

@@ -20,8 +20,6 @@
 <storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 <storageModule moduleId="org.eclipse.cdt.core.pathentry">
 <pathentry excluding="**/CMakeFiles/" kind="out" path=""/>
-<pathentry kind="mac" name="ROS_PACKAGE_NAME" path="" value="&quot;to_openhab_float&quot;"/>
-<pathentry kind="mac" name="ROSCONSOLE_BACKEND_LOG4CXX" path="" value=""/>
 <pathentry kind="mac" name="__STDC__" path="" value="1"/>
 <pathentry kind="mac" name="__STDC_HOSTED__" path="" value="1"/>
 <pathentry kind="mac" name="__GNUC__" path="" value="4"/>
@@ -236,24 +234,28 @@
 <pathentry kind="mac" name="__GXX_RTTI" path="" value="1"/>
 <pathentry kind="mac" name="__EXCEPTIONS" path="" value="1"/>
 <pathentry kind="mac" name="_GNU_SOURCE" path="" value="1"/>
-<pathentry include="/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride/devel/include" kind="inc" path="" system="true"/>
-<pathentry include="/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/common/include" kind="inc" path="" system="true"/>
-<pathentry include="/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/common/src" kind="inc" path="" system="true"/>
-<pathentry include="/opt/ros/hydro/include" kind="inc" path="" system="true"/>
-<pathentry include="/usr/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/src/gtest/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/src/gtest" kind="inc" path="" system="true"/>
 <pathentry include="/home/viki/catkin_ws/devel/include" kind="inc" path="" system="true"/>
+<pathentry include="/opt/ros/hydro/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/lib/gcc/i686-linux-gnu/4.6/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/local/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/lib/gcc/i686-linux-gnu/4.6/include-fixed" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include/i386-linux-gnu" kind="inc" path="" system="true"/>
+<pathentry include="/usr/include" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include/c++/4.6" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include/c++/4.6/i686-linux-gnu" kind="inc" path="" system="true"/>
 <pathentry include="/usr/include/c++/4.6/backward" kind="inc" path="" system="true"/>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
 <buildTargets>
+<target name=": _catkin_empty_exported_target" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>catmake</buildCommand>
+<buildArguments>-j8</buildArguments>
+<buildTarget>_catkin_empty_exported_target</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
 <target name=": clean_test_results" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>catmake</buildCommand>
 <buildArguments>-j8</buildArguments>
@@ -261,59 +263,10 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": diagnostic_msgs_generate_messages_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>diagnostic_msgs_generate_messages_cpp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": diagnostic_msgs_generate_messages_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>diagnostic_msgs_generate_messages_lisp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": diagnostic_msgs_generate_messages_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>diagnostic_msgs_generate_messages_py</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
 <target name=": doxygen" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>catmake</buildCommand>
 <buildArguments>-j8</buildArguments>
 <buildTarget>doxygen</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": dynamic_reconfigure_gencfg" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>dynamic_reconfigure_gencfg</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": dynamic_reconfigure_generate_messages_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>dynamic_reconfigure_generate_messages_cpp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": dynamic_reconfigure_generate_messages_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>dynamic_reconfigure_generate_messages_lisp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": dynamic_reconfigure_generate_messages_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>dynamic_reconfigure_generate_messages_py</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
@@ -352,73 +305,10 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": roscpp_generate_messages_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>roscpp_generate_messages_cpp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": roscpp_generate_messages_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>roscpp_generate_messages_lisp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": roscpp_generate_messages_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>roscpp_generate_messages_py</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": rosgraph_msgs_generate_messages_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>rosgraph_msgs_generate_messages_cpp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": rosgraph_msgs_generate_messages_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>rosgraph_msgs_generate_messages_lisp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": rosgraph_msgs_generate_messages_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>rosgraph_msgs_generate_messages_py</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
 <target name=": run_tests" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>catmake</buildCommand>
 <buildArguments>-j8</buildArguments>
 <buildTarget>run_tests</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": std_msgs_generate_messages_cpp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>std_msgs_generate_messages_cpp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": std_msgs_generate_messages_lisp" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>std_msgs_generate_messages_lisp</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": std_msgs_generate_messages_py" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>std_msgs_generate_messages_py</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
@@ -436,41 +326,6 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[exe] to_openhab_float" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>to_openhab_float</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[exe] to_openhab_float/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>to_openhab_float/fast</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="Build" path="[Targets]/[exe] to_openhab_float" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-C "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride" -j8</buildArguments>
-<buildTarget>to_openhab_float</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="Clean" path="[Targets]/[exe] to_openhab_float" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride" "/usr/bin/cmake" -P "CMakeFiles/to_openhab_float.dir/cmake_clean.cmake"</buildArguments>
-<buildTarget></buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": to_openhab_float_gencfg" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>to_openhab_float_gencfg</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
 <target name=": all" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>catmake</buildCommand>
 <buildArguments>-j8</buildArguments>
@@ -482,27 +337,6 @@
 <buildCommand>catmake</buildCommand>
 <buildArguments>-j8</buildArguments>
 <buildTarget>clean</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[obj] ros/src/to_openhab_float_ros.cpp.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>ros/src/to_openhab_float_ros.cpp.o</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[pre] ros/src/to_openhab_float_ros.cpp.i" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>ros/src/to_openhab_float_ros.cpp.i</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[to asm] ros/src/to_openhab_float_ros.cpp.s" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>catmake</buildCommand>
-<buildArguments>-j8</buildArguments>
-<buildTarget>ros/src/to_openhab_float_ros.cpp.s</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
@@ -522,14 +356,14 @@
 </target>
 <target name="Build" path="[Targets]/[lib] gtest" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>catmake</buildCommand>
-<buildArguments>-C "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride" -j8</buildArguments>
+<buildArguments>-C "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/uint16_from_openhab/bride" -j8</buildArguments>
 <buildTarget>gtest</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[lib] gtest" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/uint16_from_openhab/bride/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -550,14 +384,14 @@
 </target>
 <target name="Build" path="[Targets]/[lib] gtest_main" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>catmake</buildCommand>
-<buildArguments>-C "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride" -j8</buildArguments>
+<buildArguments>-C "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/uint16_from_openhab/bride" -j8</buildArguments>
 <buildTarget>gtest_main</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[lib] gtest_main" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>/usr/bin/cmake</buildCommand>
-<buildArguments>-E chdir "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/to_openhab_float/bride/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest_main.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "/home/viki/catkin_ws/src/home-automation-ros-pkg/openhab/uint16_from_openhab/bride/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest_main.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -646,6 +480,6 @@
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<project id="to_openhab_float.null.1" name="to_openhab_float"/>
+<project id="uint16_from_openhab.null.1" name="uint16_from_openhab"/>
 </storageModule>
 </cproject>

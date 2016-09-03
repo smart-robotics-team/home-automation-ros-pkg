@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="to_openhab_uint16" author="Joffrey Kriegel" author_email="kriegel.joffrey@gmail.com" description="The to_openhab_uint16 package" license="GPLv3">
+  <node name="to_openhab_uint16" frequency="50.0">
+    <publisher name="output" msg="diagnostic_msgs::KeyValue"/>
+    <subscriber name="input" msg="std_msgs::UInt16"/>
+    <parameter name="key" type="string"/>
+  </node>
+  <depend>std_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+</ros:Package>

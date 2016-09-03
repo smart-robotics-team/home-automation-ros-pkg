@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:ros="http://ros/1.0" xmi:id="_UN_bcHIQEeafIcHwCpmryA" type="RosPackage" name="to_openhab_uint16.ros_package_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_U0mIcHIQEeafIcHwCpmryA" type="2001" fontName="Ubuntu">
+    <children xmi:type="notation:DecorationNode" xmi:id="_U0mIcnIQEeafIcHwCpmryA" type="5008"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_U0mIc3IQEeafIcHwCpmryA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_bvPmYHIQEeafIcHwCpmryA" type="3001">
+        <element xmi:type="ros:Parameter" href="to_openhab_uint16.ros_package#//@node.0/@parameter.0"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_bvPmYXIQEeafIcHwCpmryA"/>
+      </children>
+      <styles xmi:type="notation:TitleStyle" xmi:id="_U0mIdHIQEeafIcHwCpmryA" showTitle="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_U0mIdXIQEeafIcHwCpmryA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_U0mIdnIQEeafIcHwCpmryA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_c6ss4HIQEeafIcHwCpmryA" type="3004">
+      <children xmi:type="notation:DecorationNode" xmi:id="_c6tT8HIQEeafIcHwCpmryA" type="5004"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_c6ss4XIQEeafIcHwCpmryA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_c6ss4nIQEeafIcHwCpmryA" fontName="Ubuntu"/>
+      <element xmi:type="ros:Publisher" href="to_openhab_uint16.ros_package#//@node.0/@publisher.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c6ss43IQEeafIcHwCpmryA"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_emdEEHIQEeafIcHwCpmryA" type="3007">
+      <children xmi:type="notation:DecorationNode" xmi:id="_emdrIHIQEeafIcHwCpmryA" type="5007"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_emdEEXIQEeafIcHwCpmryA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_emdEEnIQEeafIcHwCpmryA" fontName="Ubuntu"/>
+      <element xmi:type="ros:Subscriber" href="to_openhab_uint16.ros_package#//@node.0/@subscriber.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_emdEE3IQEeafIcHwCpmryA"/>
+    </children>
+    <element xmi:type="ros:Node" href="to_openhab_uint16.ros_package#//@node.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U0mIcXIQEeafIcHwCpmryA" x="348" y="132" width="373" height="181"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_UN_bcXIQEeafIcHwCpmryA"/>
+  <element xmi:type="ros:Package" href="to_openhab_uint16.ros_package#/"/>
+</notation:Diagram>

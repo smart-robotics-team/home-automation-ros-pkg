@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ros:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ros="http://ros/1.0" name="int32_from_openhab" author="Joffrey Kriegel" author_email="kriegel.joffrey@gmail.com" description="The int32_from_openhab package" license="GPLv3">
+  <node name="int32_from_openhab" frequency="50.0">
+    <publisher name="output" msg="std_msgs::Int32"/>
+    <subscriber name="input" msg="diagnostic_msgs::KeyValue"/>
+    <parameter name="key" type="string"/>
+  </node>
+  <depend>std_msgs</depend>
+  <depend>diagnostic_msgs</depend>
+</ros:Package>
