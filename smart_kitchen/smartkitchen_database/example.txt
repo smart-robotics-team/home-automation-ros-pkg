@@ -1,8 +1,0 @@
-Group ROS (all)
-
-String ROS_Status "ROS [%s]"
-
-Switch jus d'orange "jus d'orange" (ROS)
-Switch yahourt vanille "yahourt vanille" (ROS)
-Switch yahourt vanille "yahourt vanille" (ROS)
-Writing this to a file.
